@@ -57,4 +57,4 @@ Please read the [CONTRIBUTING](https://github.com/daviddetorres/connection-statu
 - [David de Torres](https://github.com/daviddetorres) - *Initial work*
 
 ## License
-This project is published under Apache 2.0, see [LICENSE](https://github.com/daviddetorres/connection-status-exporter/blob/master/LICENSE).
+This project is published under MIT License, see [LICENSE](https://github.com/daviddetorres/jscumm/blob/master/LICENSE).
