@@ -1,0 +1,727 @@
+{
+	"name": "Backstage",
+	"id": "0_tutorial_studio",
+	"image": "0_tutorial_studio.svg",
+	"bso": "bkst_theme",
+	"initial_commands": [
+		{
+			"com": "if",
+			"cond": "! #item('1opapelesapuestascompleto')",
+			"then": [
+				{
+					"com": "+item",
+					"item": "1opapelesapuestascompleto"
+				}
+			],
+			"else": []
+		},
+		{
+			"com": "if",
+			"cond": "! #flag('1fbackstage')",
+			"then": [
+				{
+					"com": "ntxt",
+					"txt": [
+						"David:#Hi! I'm David de Torres, creator and maintainer of the JSCUMM engine.",
+						"David:#This engine was created for the adventure Holmes O'Bedlam, that you can find in Play Store",
+						"David:#and some years later, the engine is available as an open source project.",
+						"David:#Feel free to explore these scenes to learn how to script you own games.",
+						"David:#You can also inspect the scenes with a svg editor, like Inkscape, to see how to build new ones.",
+						"David:#You can also find a lot of documentation and case of uses in the Github repository."
+					]
+				},
+				{
+					"com": "+flag",
+					"flag": "1fbackstage"
+				}
+			],
+			"else": []
+		}
+	],
+	"ending_commands": [],
+	"default_commands": [
+		{
+			"com": "rand",
+			"coms": [
+				[
+					{
+						"com": "ntxt",
+						"txt": [
+							"#I'd prefer not to do THAT."
+						]
+					}
+				],
+				[
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Eh... Nope."
+						]
+					}
+				],
+				[
+					{
+						"com": "ntxt",
+						"txt": [
+							"#I don't think that's a good idea."
+						]
+					}
+				],
+				[
+					{
+						"com": "ntxt",
+						"txt": [
+							"#That makes no sense at all."
+						]
+					}
+				]
+			]
+		}
+	],
+	"characters": [
+		{
+			"id": "puerta",
+			"name": "magical mystery door",
+			"image": "221b_puerta_despensa.jpg",
+			"actions": {
+				"observe": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#An amazingly nice drawn door. Awesome perspective.",
+							"David:#Thanks!"
+						]
+					}
+				],
+				"look": [
+					{
+						"com": "goto",
+						"type": "character",
+						"object": "puerta",
+						"action": "use"
+					}
+				],
+				"use": [
+					{
+						"com": "sound",
+						"sound": "puerta"
+					},
+					{
+						"com": "scn",
+						"scene": "0_tutorial_larder"
+					}
+				],
+				"open": [
+					{
+						"com": "goto",
+						"type": "character",
+						"object": "puerta",
+						"action": "use"
+					}
+				]
+			}
+		},
+		{
+			"id": "david",
+			"name": "David",
+			"image": "david.jpg",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#The creator and maintainer of the JSCUMM engine."
+						]
+					}
+				],
+				"talk": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"David:#Hi! What's up?"
+						]
+					},
+					{
+						"com": "ops",
+						"ops": [
+							{
+								"txt": "About the engine...",
+								"coms": [
+									{
+										"com": "ops",
+										"ops": [
+											{
+												"txt": "Can I make my own games with it?",
+												"coms": [
+													{
+														"com": "ntxt",
+														"txt": [
+															"David:#Of course! That's the point of making it open source!",
+															"David:#The engine is designed to create web games or convert them in mobile games with tools like Cordova. This is the way Holmes O'Bedlam was made.",
+															"David:#As any open source project, all new features and improvements are welcome.",
+															"David:#Also, the games using the engine can be listed in the project repository!"
+														]
+													}
+												]
+											},
+											{
+												"txt": "Where can I learn to make my own games with the JSCUMM engine?",
+												"coms": [
+													{
+														"com": "ntxt",
+														"txt": [
+															"David:#There is a lot of documentation in the Github repository, in the docs directory.",
+															"David:#You can also inspect these tutorial scenes (both the svg and the json) to have a look on how to organize and create new amazing scenes."
+														]
+													}
+												]
+											},
+											{
+												"txt": "Can I change the artwork, GUI, images...?",
+												"coms": [
+													{
+														"com": "ntxt",
+														"txt": [
+															"David:#Sincerely: that would be amazing!",
+															"David:#As a one-man-dev-team I had to learn how to ilustrate and draw the artwork of Holmes O'Bedlam, from the GUI to the scenes, characters...",
+															"David:#If you can create new amazing GUIs, scenes, etc. with different ambientation, game themes...",
+															"David:#We are all waiting to see what you can do!"
+														]
+													}
+												]
+											},
+											{
+												"txt": "Let's talk about something else.",
+												"coms": [
+													{
+														"com": "-ops"
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"txt": "About you...",
+								"coms": [
+									{
+										"com": "ops",
+										"ops": [
+											{
+												"txt": "Who are you and why are you making this game?",
+												"coms": [
+													{
+														"com": "ntxt",
+														"txt": [
+															"David:#A long time ago me and some friends made an online graphic adventure called Sancho's Island and it told the story of Sancho Panza helping Don Quixote.",
+															"David:#Now, more than 10 years later I wanted to make another old-times graphic adventure, and Sherlock and Watson fitted quite well with what I was used to write.",
+															"David:#The rest is Holmes O'Bedlam, and JSCUMM is the scripting engine that I programmed for it."
+														]
+													}
+												]
+											},
+											{
+												"txt": "Did you make all this by your self?",
+												"coms": [
+													{
+														"com": "ntxt",
+														"txt": [
+															"David:#I created the game Holmed O'Bedlam in 2017, but the JSCUMM project was published as opensource in January 2020.",
+															"David:#Since the publication of the project I maintain the project and there are other programmers, digital artists, game designers, etc. that can contribute to the project."
+														]
+													}
+												]
+											},
+											{
+												"txt": "Let's talk about something else.",
+												"coms": [
+													{
+														"com": "-ops"
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"txt": "I'll be around.",
+								"coms": [
+									{
+										"com": "ntxt",
+										"txt": [
+											"#I'll be around."
+										]
+									},
+									{
+										"com": "-ops"
+									}
+								]
+							}
+						]
+					}
+				],
+				"push": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"David:#I understand your frustration, but violence will not make the new feature to be released faster."
+						]
+					}
+				],
+				"mix": {}
+			}
+		},
+		{
+			"id": "luna",
+			"name": "Luna",
+			"image": "luna.jpg",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Luna."
+						]
+					}
+				],
+				"talk": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"Luna:#Hello!"
+						]
+					},
+					{
+						"com": "ops",
+						"ops": [
+							{
+								"txt": "Who are you?",
+								"coms": [
+									{
+										"com": "ntxt",
+										"txt": [
+											"Luna:#I help daddy to program the videogame.",
+											"Luna:#Did you like?"
+										]
+									}
+								]
+							},
+							{
+								"txt": "Tell me a joke.",
+								"coms": [
+									{
+										"com": "rand",
+										"coms": [
+											[
+												{
+													"com": "ntxt",
+													"txt": [
+														"Luna:#A Roman comes to a bar, rise his two fingers and says:#-Five beers, please!"
+													]
+												}
+											],
+											[
+												{
+													"com": "ntxt",
+													"txt": [
+														"Luna:#A woman waiting in the bus stop say to another woman:#-Hi, I'm Anna!",
+														"Luna:#And the other woman says:#-Hi, I'm not."
+													]
+												}
+											]
+										]
+									}
+								]
+							},
+							{
+								"txt": "How did you manage to get into the videogame... at your age?",
+								"coms": [
+									{
+										"com": "ntxt",
+										"txt": [
+											"Luna:#The same way you did.",
+											"Luna:#Through the door!"
+										]
+									}
+								]
+							},
+							{
+								"txt": "Bye!",
+								"coms": [
+									{
+										"com": "ntxt",
+										"txt": [
+											"Luna:#See you later, alligator!"
+										]
+									},
+									{
+										"com": "--ops"
+									}
+								]
+							}
+						]
+					}
+				],
+				"give": {
+					"1ogalletas": [
+						{
+							"com": "ntxt",
+							"txt": [
+								"Luna:#Thank you! I made these cookies, did you know!",
+								"Luna:#You can take more from the larder."
+							]
+						},
+						{
+							"com": "-item",
+							"item": "1ogalletas"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "ceren",
+			"name": "Ceren",
+			"image": "ceren.jpg",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Ceren."
+						]
+					}
+				],
+				"talk": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Hey! Hi!"
+						]
+					},
+					{
+						"com": "ops",
+						"ops": [
+							{
+								"txt": "And who are you?",
+								"coms": [
+									{
+										"com": "ntxt",
+										"txt": [
+											"Ceren:#Hi, I'm Ceren. As you can guess, David makes me read and play all the game from time to time, so I'm kind of the post-production team."
+										]
+									}
+								]
+							},
+							{
+								"txt": "Do you also work in the game?",
+								"coms": [
+									{
+										"com": "ntxt",
+										"txt": [
+											"Ceren:#Of course! Most probably if not for me you'd never have heard of it.",
+											"Ceren:#David is good at programming and that stuff, but he is terrible with promotion and public relations.",
+											"David:#...Did you say something, honey?",
+											"Ceren:#Yes, that you are an awful PR.",
+											"David:#Ah... Err... Yes.",
+											"David:#(Askim, be careful, they can hear us...)",
+											"Ceren:#(Don't worry, I'll not tell them about the new version of the engine!)"
+										]
+									}
+								]
+							},
+							{
+								"txt": "See you!",
+								"coms": [
+									{
+										"com": "ntxt",
+										"txt": [
+											"Ceren:#See you around!"
+										]
+									},
+									{
+										"com": "--ops"
+									}
+								]
+							}
+						]
+					}
+				],
+				"give": {
+					"1ogalletas": [
+						{
+							"com": "ntxt",
+							"txt": [
+								"Ceren:#Oh, thanks!",
+								"Ceren:#Luna, do you want a cookie?"
+							]
+						},
+						{
+							"com": "goto",
+							"type": "character",
+							"object": "luna",
+							"action": "give",
+							"dative": "1ogalletas"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "drunken",
+			"name": "The Drunken Penguins poster",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#ST. PATRICK'S CONCERT#THE DRUNKEN PENGUINS#22:30H",
+							"#WOW!!! The Drunken Penguins in concert again!!! In St. Patrick's day!!!"
+						]
+					}
+				],
+				"observe": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#The poster has penguins with hats and eye patch. Also there is a big 4 leaf clover."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "pan",
+			"name": "Movie poster",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#It's the poster of a movie with a flying boat facing an island in the sky."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "ordenador",
+			"name": "computer",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#That's where all the magic is done...",
+							"#Also the annoying and frustating bugs of the game, but let's don't name the devil...",
+							"#...just in casSSssSSEEEEEeee$%·/$&82743@76@46#@76@32@34@34@34@92"
+						]
+					}
+				],
+				"observe": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#It has an Ubuntu installed with Gimp, Krita, Inkscape...",
+							"#Who in his right mind would make a videogame without privative software?!?!?"
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "mapa",
+			"name": "1643 world map",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#The map of the discovered lands in 1643.",
+							"#Quite useful when studying anthropology at night..."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "ventana",
+			"name": "window",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#I can see some children playing in a park, a bus stop and a river."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "mascara",
+			"name": "African mask",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Some African mask used as a souvenir trying to trap all the tribalism and ethnicity created by the indirect government to submit the African colonies...",
+							"Ceren:#David, you are doing it again.",
+							"Ceren:#They are not here to hear your Anthropologist stuff, but to play.",
+							"David:#...Errr...",
+							"David:#Sorry, I mean:",
+							"#A wooden African mask."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "espejo",
+			"name": "mirror",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A mirror.",
+							"#Oh my God! What am I doing with this hair!",
+							"David:#You see? I don't have that problem."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "paris",
+			"name": "Paris photograph",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#There is a girl running with an ice cream with the Eiffel Tower in the background.",
+							"Luna:#That's me!"
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "cartamagna",
+			"name": "Magna Carta",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#MAGNA CARTA 1215",
+							"#...",
+							"Ceren:#Won't you say more about my poster?",
+							"David:#Ooookeeeyyyy...",
+							"#MAGNA CARTA 1215#There are lots of heraldic shields with a royal seal and lot's of small words in ancient English.",
+							"Ceren:#..."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "cajas",
+			"name": "boxes",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Boxes, little boxes."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "estanteria",
+			"name": "self",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Linux Administration Handbook#Do androids dream of electric sheep?#On the Origin of Species",
+							"#Women, barns and capitals#The pink monster#Lulu goes to the school",
+							"Luna:#Daddyyyyy... Let's read the Pink Monster... Pleaseeee...",
+							"David:#Ok! Let's read it again!",
+							"Luna:#No! Better I'll end my painting and then we read.",
+							"David:#As you wish."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "mesaluna",
+			"name": "Luna's desk",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#It has pencils, pens, markers, scissor... All you need to create everything from paper!",
+							"#There is also a small computer to learn how to program robots to conquer the world.",
+							"Luna:#They will not, Daddy! I'll program them with the three laws of the robotics! They'll not harm humans!"
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "portatil",
+			"name": "laptop",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A laptop with some of the keys missing."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "alfombra",
+			"name": "carpet",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A modern Turkish carpet full of colours."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "caballete",
+			"name": "easel",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Wow! Did you painted that by your self?",
+							"Luna:#Of course! I have lot's of paintings in my room and in annane's room. Do you want to see them?",
+							"David:#Luna, honey... I only put this room in the game... Better next time, ok?",
+							"Luna:#Tamam! Next time I'll show you my pictures!"
+						]
+					}
+				]
+			}
+		}
+	]
+}

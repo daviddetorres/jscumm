@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1450"
+   height="810"
+   id="image"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="0_tutorial_studio.svg">
+  <defs
+     id="defs3887" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.52"
+     inkscape:cx="634.59259"
+     inkscape:cy="333.89268"
+     inkscape:document-units="px"
+     inkscape:current-layer="personajes_fijos"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="747"
+     inkscape:window-x="0"
+     inkscape:window-y="21"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3890">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="imagen"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     transform="translate(0,-242.36218)">
+    <image
+       sodipodi:absref=""
+       xlink:href="../images/0_tutorial_studio.jpg"
+       y="242.36218"
+       x="0"
+       id="image2995"
+       height="810"
+       width="1450" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="personajes_fijos"
+     inkscape:label="personajes_fijos"
+     style="display:inline;opacity:0"
+     transform="translate(0,60)">
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="puerta"
+       width="82.588356"
+       height="760.1311"
+       x="1226.5123"
+       y="-12.567118"
+       class="multiply character_button"
+       character_id="puerta" />
+    <rect
+       character_id="david"
+       class="multiply character_button"
+       y="324.16757"
+       x="572.17572"
+       height="182.32495"
+       width="105.54755"
+       id="david"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       character_id="luna"
+       class="multiply character_button"
+       y="412.02634"
+       x="381.53748"
+       height="295.20761"
+       width="78.761833"
+       id="luna"
+       style="display:inline;opacity:1;fill:#ff5555;fill-opacity:1;stroke:none" />
+    <path
+       transform="matrix(-0.02678818,-0.99964113,0.99978066,-0.02094349,0,0)"
+       style="display:inline;opacity:1;fill:#ff5555;fill-opacity:1;stroke:none"
+       d="m -761.90572,421.86969 98.63514,29.94226 3.01172,145.70516 113.55696,-8.20789 -7.6911,92.14956 -206.77973,2.5232 z"
+       id="ceren"
+       class="multiply character_button"
+       inkscape:connector-curvature="0"
+       character_id="ceren"
+       sodipodi:nodetypes="ccccccc" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="drunken"
+       width="78.624466"
+       height="118.86341"
+       x="835.63727"
+       y="297.24451"
+       class="multiply character_button"
+       character_id="drunken" />
+    <rect
+       character_id="pan"
+       class="multiply character_button"
+       y="291.47528"
+       x="939.4834"
+       height="101.18575"
+       width="92.222672"
+       id="pan"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="ordenador"
+       width="96.302132"
+       height="99.825935"
+       x="677.03802"
+       y="318.67169"
+       class="multiply character_button"
+       character_id="ordenador"
+       inkscape:transform-center-x="-154.77698"
+       inkscape:transform-center-y="-26.830925" />
+    <rect
+       inkscape:transform-center-y="-35.968138"
+       inkscape:transform-center-x="-259.6813"
+       character_id="mapa"
+       class="multiply character_button"
+       y="151.41374"
+       x="606.32733"
+       height="133.82146"
+       width="161.57353"
+       id="mapa"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="ventana"
+       width="305.71454"
+       height="242.60713"
+       x="167.10524"
+       y="165.01195"
+       class="multiply character_button"
+       character_id="ventana"
+       inkscape:transform-center-x="-491.345"
+       inkscape:transform-center-y="-65.207228" />
+    <rect
+       style="display:inline;opacity:1;fill:#ff5555;fill-opacity:1;stroke:none"
+       id="mascara"
+       width="78.761833"
+       height="220.41747"
+       x="40.222473"
+       y="338.59601"
+       class="multiply character_button"
+       character_id="mascara" />
+    <rect
+       character_id="espejo"
+       class="multiply character_button"
+       y="182.21663"
+       x="22.544804"
+       height="126.58984"
+       width="104.59843"
+       id="espejo"
+       style="display:inline;opacity:1;fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       character_id="paris"
+       class="multiply character_button"
+       y="295.88467"
+       x="1085.8442"
+       height="159.65804"
+       width="113.9798"
+       id="paris"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="cartamagna"
+       width="94.942307"
+       height="131.10181"
+       x="1102.1621"
+       y="150.38385"
+       class="multiply character_button"
+       character_id="cartamagna" />
+    <rect
+       character_id="cajas"
+       class="multiply character_button"
+       y="192.72855"
+       x="795.60278"
+       height="59.031307"
+       width="254.04134"
+       id="cajas"
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       transform="matrix(0.9915982,-0.12935617,0.12935617,0.9915982,0,0)" />
+    <rect
+       transform="matrix(0.99833534,-0.05767623,0.05767623,0.99833534,0,0)"
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="estanteria"
+       width="254.04134"
+       height="59.031307"
+       x="810.13177"
+       y="251.13638"
+       class="multiply character_button"
+       character_id="estanteria" />
+    <rect
+       character_id="mesaluna"
+       class="multiply character_button"
+       y="465.86224"
+       x="749.96857"
+       height="56.311657"
+       width="143.89586"
+       id="mesaluna"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="portatil"
+       width="112.61998"
+       height="53.592014"
+       x="934.90417"
+       y="415.54889"
+       class="multiply character_button"
+       character_id="portatil" />
+    <rect
+       character_id="alfombra"
+       class="multiply character_button"
+       y="499.72723"
+       x="888.92688"
+       height="95.666229"
+       width="288.31229"
+       id="alfombra"
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       transform="matrix(0.99048873,0.13759385,-0.3180366,0.94807844,0,0)" />
+    <rect
+       character_id="caballete"
+       class="multiply character_button"
+       y="322.60223"
+       x="288.31262"
+       height="273.39932"
+       width="128.99435"
+       id="caballete"
+       style="display:inline;opacity:1;fill:#ff5555;fill-opacity:1;stroke:none"
+       transform="matrix(0.92309274,0.38457743,0.01064388,0.99994335,0,0)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="personajes_moviles"
+     inkscape:label="personajes_moviles"
+     transform="translate(4.0586487,54.115316)" />
+</svg>

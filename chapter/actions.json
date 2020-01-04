@@ -1,0 +1,51 @@
+[
+	{ 
+		"id": "look",
+		"text": "Look at",
+		"dative": false
+	},
+	{
+		"id": "observe",
+		"text": "Observe",
+		"dative": false,
+		"alternative": "look"
+	},
+	{
+		"id": "take",
+		"text": "Take",
+		"dative": false
+	},
+	{
+		"id": "talk",
+		"text": "Talk to",
+		"dative": false
+	},
+	{
+		"id": "use",
+		"text": "Use",
+		"dative": false
+	},
+	{
+		"id": "open",
+		"text": "Open",
+		"dative": false,
+		"alternative": "use"
+	},
+	{
+		"id": "give",
+		"text": "Give",
+		"dative": true,
+		"preposition": "to"
+	},
+	{
+		"id": "mix",
+		"text": "Mix/use",
+		"dative": true,
+		"preposition": "with"
+	},
+	{
+		"id": "push",
+		"text": "Push/pull",
+		"dative": false
+	}
+]

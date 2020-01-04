@@ -1,0 +1,79 @@
+*
+{
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+body{
+	background-color: black;
+	overflow: hidden;
+}
+
+.banner {
+	height: 0px;
+	width: 100%;
+	background-color: darkcyan;
+}
+
+.gui {
+	width: 100%;
+	background-color: black;
+}
+
+
+/*  https://css-tricks.com/basics-css-blend-modes/  */
+.multiply{
+	mix-blend-mode: multiply !important;
+}
+
+.gui_texto_visible{
+	opacity: 100;
+}
+
+.gui_texto_invisible{
+	opacity: 0;
+}
+
+.selected_action{
+	fill: #444 !important;
+	fill-opacity: 0.1 !important;
+}
+
+.hidden{
+	display:none !important;
+}
+
+@font-face{
+	font-family:  Purisa;
+	src: url('./fuentes/Purisa.ttf') format('truetype');
+	font-style: oblique;
+}
+
+@font-face{
+	font-family:  OpenSans;
+	src: url('./fuentes/OpenSans-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+.character_name{
+	font-family: Purisa;
+	font-size: 33px;
+	font-style: oblique;
+	font-weight: normal;
+}
+
+.text_line,.options_line,#action_text{
+	font-family: OpenSans;
+}
+
+#current_game{
+	font-size: 3em;
+}
+
+.selected_game_text{
+	font-size: 3em;
+}

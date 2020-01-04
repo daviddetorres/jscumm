@@ -1,0 +1,14 @@
+{
+    "first_scene": "0_tutorial_studio",
+	 "total_number_flags": 3,
+	 "text_images":{
+		 "About ginger cookie:": "./chapter/items/galleta.jpg",
+		 "About ginger cookies:": "./chapter/items/galleta.jpg",
+
+		 "David:":"./chapter/characters/david.jpg",
+		 "Luna:":"./chapter/characters/luna.jpg",
+		 "Ceren:":"./chapter/characters/ceren.jpg",
+		 
+		 "About scratches:": "./chapter/characters/marcas_despensa.jpg"
+	 }
+}

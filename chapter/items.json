@@ -1,0 +1,90 @@
+[
+	{
+		"id": "1omartillo",
+		"name": "small hammer",
+		"image": "martillo.jpg",
+		"actions": {
+			"look": [
+				{
+					"com": "ntxt",
+					"txt": [
+						"#It's a small hammer."
+					]
+				}
+			],
+			"observe": [
+				{
+					"com": "ntxt",
+					"txt": [
+						"About small hammer:#It's an iron hammer. A little bit rusty, but useful for most of the maintenance of an usual English home."
+					]
+				}
+			]
+		}
+	},
+	{
+		"id": "1ogalletas",
+		"name": "ginger cookie",
+		"image": "galleta.jpg",
+		"actions": {
+			"look": [
+				{
+					"com": "ntxt",
+					"txt": [
+						"#One of Ceren's famous ginger cookies."
+					]
+				}
+			],
+			"observe":[
+				{
+					"com": "ntxt",
+					"txt": [
+						"About ginger cookie:#One of the famous ginger cookies of Ceren.",
+						"About ginger cookie:#Half of Zaragoza have heard of them but only a bunch of us have tasted them.",
+						"About ginger cookie:#They are terrific!."
+					]
+				}
+			],
+			"use": [
+				{
+					"com": "ntxt",
+					"txt": [
+						"#I'd better ask them if they want one before eating all of them by myself..."
+					]
+				}
+			]
+		}
+	},
+	{
+		"id": "1opapelesapuestascompleto",
+		"name": "cockfights bets",
+		"image": "papelapuestas.jpg",
+		"actions": {
+			"look": [
+				{
+					"com": "ntxt",
+					"txt": [
+						"#There must be a pattern in all this numbers..."
+					]
+				},
+				{
+					"com": "+splash", 
+					"image": "apuestas_gallos.svg"
+				},
+				{"com":"sound", "sound":"papel"}
+			],
+			"observe": [
+				{
+					"com": "ntxt",
+					"txt": [
+						"#Just a splash screen from the game Holmes O'Bedlam used to show the behaviour of the functionality."
+					]
+				},
+				{
+					"com": "+splash", 
+					"image": "apuestas_gallos.svg"
+				}
+			]
+		}
+	}
+]

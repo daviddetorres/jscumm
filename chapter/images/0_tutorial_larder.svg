@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1450"
+   height="810"
+   id="image"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="1_221b_despensa.svg">
+  <defs
+     id="defs3887" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.36958114"
+     inkscape:cx="1082.5361"
+     inkscape:cy="337.33094"
+     inkscape:document-units="px"
+     inkscape:current-layer="personajes_fijos"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="747"
+     inkscape:window-x="0"
+     inkscape:window-y="21"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3890">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="imagen"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     transform="translate(0,-242.36218)">
+    <image
+       sodipodi:absref=""
+       xlink:href="../images/0_tutorial_larder.jpg"
+       width="1450"
+       height="810"
+       id="image2995"
+       x="0"
+       y="242.36218" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="personajes_fijos"
+     inkscape:label="personajes_fijos"
+     style="opacity:0;display:inline"
+     transform="translate(0,60)">
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="puerta"
+       width="86.414902"
+       height="809.87598"
+       x="3.9358163"
+       y="-58.485477"
+       class="multiply character_button"
+       character_id="puerta" />
+    <rect
+       character_id="galletas"
+       class="multiply character_button"
+       y="459.49142"
+       x="151.23158"
+       height="63.084625"
+       width="246.05508"
+       id="galletas"
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       transform="matrix(0.96225626,-0.27214497,0.27214497,0.96225626,0,0)" />
+    <rect
+       character_id="miel"
+       class="multiply character_button"
+       y="-4.370162"
+       x="317.80466"
+       height="100.96534"
+       width="108.06104"
+       id="miel"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="marcas"
+       width="78.297623"
+       height="49.55579"
+       x="252.86627"
+       y="493.49075"
+       class="multiply character_button"
+       character_id="marcas" />
+    <rect
+       character_id="cuchara_madera"
+       class="multiply character_button"
+       y="120.40401"
+       x="120.85097"
+       height="233.22926"
+       width="72.557823"
+       id="cuchara_madera"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="cuchara_sopera"
+       width="49.59864"
+       height="219.83641"
+       x="189.72852"
+       y="118.49074"
+       class="multiply character_button"
+       character_id="cuchara_sopera" />
+    <rect
+       character_id="tenedor"
+       class="multiply character_button"
+       y="118.49074"
+       x="243.29994"
+       height="194.96396"
+       width="49.59864"
+       id="tenedor"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="ajos"
+       width="53.425171"
+       height="235.14253"
+       x="918.68262"
+       y="-3.9582431"
+       class="multiply character_button"
+       character_id="ajos" />
+    <rect
+       character_id="pimientos"
+       class="multiply character_button"
+       y="0.10040554"
+       x="869.97882"
+       height="126.9119"
+       width="49.366524"
+       id="pimientos"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="libro"
+       width="87.247246"
+       height="109.32442"
+       x="763.10107"
+       y="19.040766"
+       class="multiply character_button"
+       character_id="libro" />
+    <rect
+       character_id="mortero"
+       class="multiply character_button"
+       y="35.27536"
+       x="449.23224"
+       height="76.855225"
+       width="87.247246"
+       id="mortero"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="molinillo"
+       width="54.721737"
+       height="112.25063"
+       x="547.76538"
+       y="1.7932167"
+       class="multiply character_button"
+       character_id="molinillo" />
+    <rect
+       character_id="jarra"
+       class="multiply character_button"
+       y="42.928421"
+       x="617.59955"
+       height="76.855225"
+       width="101.59674"
+       id="jarra"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="salero"
+       width="39.415619"
+       height="44.329716"
+       x="726.6557"
+       y="79.280464"
+       class="multiply character_button"
+       character_id="salero" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="caldero"
+       width="141.77531"
+       height="158.16901"
+       x="326.78326"
+       y="193.11975"
+       class="multiply character_button"
+       character_id="caldero" />
+    <rect
+       character_id="sarten"
+       class="multiply character_button"
+       y="277.30341"
+       x="482.71439"
+       height="54.85268"
+       width="124.55592"
+       id="sarten"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="manzanas"
+       width="183.86714"
+       height="54.85268"
+       x="639.60217"
+       y="276.34677"
+       class="multiply character_button"
+       character_id="manzanas" />
+    <rect
+       character_id="plato"
+       class="multiply character_button"
+       y="181.64015"
+       x="790.75012"
+       height="96.944519"
+       width="82.464081"
+       id="plato"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="patatas"
+       width="70.027855"
+       height="96.944519"
+       x="1116.0051"
+       y="125.19883"
+       class="multiply character_button"
+       character_id="patatas" />
+    <rect
+       character_id="cebollas"
+       class="multiply character_button"
+       y="128.06873"
+       x="1190.6224"
+       height="96.944519"
+       width="91.073776"
+       id="cebollas"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="cebollasxxl"
+       width="158.03806"
+       height="71.11544"
+       x="1284.3724"
+       y="164.42078"
+       class="multiply character_button"
+       character_id="cebollasxxl" />
+    <rect
+       character_id="guisantes"
+       class="multiply character_button"
+       y="383.48965"
+       x="1056.6938"
+       height="178.2583"
+       width="102.55336"
+       id="guisantes"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="atun"
+       width="104.46663"
+       height="163.90881"
+       x="1208.7985"
+       y="513.59174"
+       class="multiply character_button"
+       character_id="atun" />
+    <rect
+       character_id="brocoli"
+       class="multiply character_button"
+       y="438.97437"
+       x="1151.4004"
+       height="184.95473"
+       width="57.591629"
+       id="brocoli"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       character_id="tomate"
+       class="multiply character_button"
+       y="482.02286"
+       x="1312.1147"
+       height="141.90627"
+       width="89.160507"
+       id="tomate"
+       style="fill:#ff5555;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="vino"
+       width="89.160507"
+       height="105.37843"
+       x="1037.4795"
+       y="641.66302"
+       class="multiply character_button"
+       character_id="vino" />
+    <rect
+       character_id="cajon2"
+       class="multiply character_button"
+       y="955.32465"
+       x="961.54126"
+       height="82.748878"
+       width="311.38724"
+       id="cajon2"
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       transform="matrix(0.8947632,-0.44654094,-0.1927908,0.98123988,0,0)" />
+    <rect
+       transform="matrix(0.85486683,-0.51884748,-0.14864843,0.98889011,0,0)"
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="cajon3"
+       width="261.53021"
+       height="150.98926"
+       x="1058.3318"
+       y="1214.7567"
+       class="multiply character_button"
+       character_id="cajon3" />
+    <rect
+       transform="matrix(0.91149658,-0.41130765,0.17786518,0.98405487,0,0)"
+       style="fill:#ff5555;fill-opacity:1;stroke:none"
+       id="cajon1"
+       width="263.76218"
+       height="121.99854"
+       x="166.17065"
+       y="730.2959"
+       class="multiply character_button"
+       character_id="cajon1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="personajes_moviles"
+     inkscape:label="personajes_moviles"
+     transform="translate(4.0586487,54.115316)">
+    <image
+       sodipodi:absref=""
+       xlink:href="../images/1_221b_martillo.jpg"
+       y="328.27832"
+       x="108.16901"
+       id="martillo"
+       height="225"
+       width="122"
+       class="character_button"
+       character_id="martillo" />
+  </g>
+</svg>

@@ -1,0 +1,702 @@
+{
+	"name": "A random larder",
+	"id": "0_tutorial_larder",
+	"image": "0_tutorial_larder.svg",
+	"bso": "221_baul_theme",
+	"initial_commands": [
+	],
+	"ending_commands": [
+	],
+	"default_commands": [
+		{
+			"com": "rand",
+			"coms":
+					  [
+						  [
+							  {
+								  "com": "ntxt",
+								  "txt": [
+									  "#I'd prefer not to do THAT."
+								  ]
+							  }
+						  ],
+						  [
+							  {
+								  "com": "ntxt",
+								  "txt": [
+									  "#Eh... Nope."
+								  ]
+							  }
+						  ],
+						  [
+							  {
+								  "com": "ntxt",
+								  "txt": [
+									  "#I don't think that's a good idea."
+								  ]
+							  }
+						  ],
+						  [
+							  {
+								  "com": "ntxt",
+								  "txt": [
+									  "#That makes no sense at all."
+								  ]
+							  }
+						  ]
+					  ]
+		}
+	],
+	"characters": [
+		{
+			"id": "puerta",
+			"name": "door to entrance",
+			"image": "221b_puerta_despensa.jpg",
+			"actions": {
+				"look":[
+					{
+						"com": "goto",
+						"type":"character",
+						"object":"puerta",
+						"action": "use"
+					}
+				],
+				"use": [
+					{"com":"sound", "sound":"puerta"},
+					{
+						"com": "scn",
+						"scene": "0_tutorial_studio"
+					}
+				],
+				"open": [
+					{
+						"com": "goto",
+						"type":"character",
+						"object":"puerta",
+						"action": "use"
+					}
+				]
+			}
+		},
+		{
+			"id": "galletas",
+			"name": "ginger cookies",
+			"actions": {
+				"take": [
+					{
+						"com": "if",
+						"cond": "! #item('1ogalletas')",
+						"then": [
+							{
+								"com": "ntxt",
+								"txt": [
+									"#I'll take just one."
+								]
+							},
+							{
+								"com": "+item",
+								"item": "1ogalletas"
+							}
+						],
+						"else": [
+								{
+									"com": "ntxt",
+									"txt": [
+										"#I already have a cookie.",
+										"#Leave some for the ones behind... They say."
+									]
+								}
+						]
+					}
+				],
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#I cannot believe it.",
+							"#Ceren made some of her famous ginger cookies!",
+							"#After her cake, this is the best thing you can ever taste."
+						]
+					}
+				],
+				"observe": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"About ginger cookies:#They are still warm. Most probably Ceren and Luna have been cooking in the morning before coming to play in the studio."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "martillo",
+			"name": "small hammer",
+			"cond": "! #item('1omartillo')",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A little hammer.",
+							"#Just exactly what you would expect to find in a place to store the food."
+						]
+					}
+				],
+				"observe":[
+					{
+						"com": "goto",
+						"type":"item",
+						"object":"1omartillo",
+						"action": "observe"
+					}
+				],
+				"take": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#When has a hammer been useless?",
+							"#I'll better take it. Who knows when I will need it!"
+						]
+					},
+					{
+						"com": "+item",
+						"item": "1omartillo"
+					},
+					{
+						"com": "-char",
+						"character": "martillo"
+					}
+				]
+			}
+		},
+		{
+			"id": "miel",
+			"name": "honey jar",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A jar full of honey. Who doesn't have a jar full of honey in their home?"
+						]
+					}
+				],
+				"observe": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#The jar is almost full. In the label can be read: 'REAL HONEY FROM THE HIGHLANDS'.",
+							"#I wonder how is the un-real honey."
+						]
+					}
+				],
+				"take": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Better to leave it there. I don't like to feel my hands sticky all day long."
+						]
+					}
+				],
+				"use": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#I really don't feel like taking some honey right now..."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "marcas",
+			"name": "scratches",
+			"image": "marcas_despensa.jpg",
+			"cond_imagen": "#flag('1fmarcaspiedra')",
+			"actions": {
+				"look":[
+					{
+						"com": "ntxt",
+						"txt": [
+							"#There are some marks in the table... I should observe them with more detail."
+						]
+					}
+				],
+				"observe": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"About scratches:#These marks seems to be done with a knife.#Strange place to cut something.",
+							"About scratches:#Maybe David was trying to sharp a knive or cutting some cables.",
+							"About scratches:#...Or maybe he was trying to sharp the knive with cables!"
+						]
+					},
+					{
+						"com": "+flag", 
+						"flag": "1fmarcaspiedra"
+					},
+					{
+						"com": "+char", 
+						"character": "marcas"
+					}
+					
+				]
+			}
+		},
+		{
+			"id": "cuchara_madera",
+			"name": "wooden spoon",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Just a wooden spoon."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "cuchara_sopera",
+			"name": "soup spoon",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A copper soup spoon."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "tenedor",
+			"name": "fork",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A wooden fork for cooking."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "ajos",
+			"name": "garlic string",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A garlic string that Ceren keeps in the larder.",
+							"#In Turkish cousine garling is a primary ingredient, along with tomato, onion and of course, spices."
+						]
+					}
+				],
+				"observe": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#They must be here for months. Some of them are too dry and are starting to change their color."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "pimientos",
+			"name": "red hot not-so-chili peppers",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#I think they like to use these peppers their dishes."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "libro",
+			"name": "recipe book",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#RECIPES FROM ANATOLIA: Traditional Turkish dishes.",
+							"#Includes some of Ceren's family most famous and secret dishes, such us dolma, sarma, kofte, çaçik and ayran."
+						]
+					}
+				],
+				"observe": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#The book seems old but quite well preserved, to be a recipe book. It has some food traces and smell, but it is obvious that they are so careful while handling it." 
+						]
+					}
+				],
+				"open":[
+					{
+						"com": "ntxt",
+						"txt": [
+							"#No way... I've tried more than once, but most of the ingredients are in Turkish, not in plain English. It's impossible to understand even how to boil the water."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "mortero",
+			"name": "mortar",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A mortar to mix spices and make some sauces. Without them, Ceren's delicious dishes would be just plain food.",
+							"#Also, some times, David and Luna use it to play role games."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "molinillo",
+			"name": "grinder",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A grinder to prepare the spices."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "jarra",
+			"name": "jug",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A jug full of cookware. It seems it's years since it's used in other way."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "salero",
+			"name": "salt",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Salt. Plain and simple salt."
+						]
+					}
+				],
+				"observe": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Sodium chloride.",
+							"#Salt."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "caldero",
+			"name": "cauldron",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A decorative cauldron."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "sarten",
+			"name": "frying pan",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A frying pan. One of the most powerful weapons, used in many cases of poisoning.",
+							"#Well... not THIS frying pan, of course."
+						]
+					}
+				],
+				"observe": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A little bit rusty and deformed, but still useful."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "manzanas",
+			"name": "green apples",
+			"actions": {
+				"look": [
+				{
+					"com": "ntxt",
+						"txt": [
+							"#Country apples! The neighbour must have send them."
+						]
+				}
+				],
+				"observe": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#They are real apples from the countryside. Some of the have even real worms."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "plato",
+			"name": "dish",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A metal dish to serve fruit and desserts."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "patatas",
+			"name": "potatoes",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A box full of small potatoes. This year they seem smaller than usual."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "cebollas",
+			"name": "onions",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A box full of onions. Juicy and tasty onions.",
+							"#One of the primary ingredients in Mediterranean cousine."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "cebollasxxl",
+			"name": "extra large onions",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Watermelon-size onions. They're taste is a mix of wood and dirt, but they are cheap."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "guisantes",
+			"name": "canned green peas",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Canned green peas, from the Rainbow Warrior Company.",
+							"#Naturally grown, artificially canned."
+						]
+					}
+				],
+				"observe": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Composition: 12% Sugar, 32% salt, 28% vegetal oil, 60% water.#Warning: It can contain traces of green peas."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "atun",
+			"name": "canned tuna",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A can full of tuna fish meat. I wonder how they managed to put the fish in the can..."
+						]
+					}
+				],
+				"observe": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#The label says:#SEEMS LIKE TUNA! TASTES LIKE TUNA! IT IS (in a mixed proportion with other animal meats) REAL TUNA!"
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "brocoli",
+			"name": "canned broccoli",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#No way! Canned broccoli? Mrs. Hudson is going to far with her obsession for canned food."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "tomate",
+			"name": "canned tomato",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Canned tomato. What will be next? Canned pineapple? May God have mercy on us...",
+							"#Ah, no, wait... It is not just tomato. It is salça! 30% Concentrated tomato."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "vino",
+			"name": "bottle of wine",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#For its smell, I'd bet that the wine has turned long time ago into vinegar."
+						]
+					}
+				],
+				"open":[
+					{
+						"com": "ntxt",
+						"txt": [
+							"#No way. I don't want to smell all the day vinegar."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "cajon1",
+			"name": "drawer",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#A drawer. Nothing special."
+						]
+					}
+				],
+				"observe": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Really, nothing special. Just a normal, plain and regular drawer."
+						]
+					}
+				],
+				"open": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#I positively know that there is nothing interesting in this drawer."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "cajon2",
+			"name": "drawer",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Oh! What a... boring drawer!"
+						]
+					}
+				],
+				"open":[
+					{
+						"com": "ntxt",
+						"txt": [
+							"#I'd just find forks and spoons. For sure I can find better ways to learn how to use JSCUMM than playing with cookware."
+						]
+					}
+				]
+			}
+		},
+		{
+			"id": "cajon3",
+			"name": "drawer",
+			"actions": {
+				"look": [
+					{
+						"com": "ntxt",
+						"txt": [
+							"#Just another drawer in the larder."
+						]
+					}
+				]
+			}
+		}
+	]
+}
