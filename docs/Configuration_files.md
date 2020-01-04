@@ -1,5 +1,5 @@
 # JSCUMM: Configuration files and directories
-For the JSCUMM engine to work properly, there are some configuration files that must me set up and that defines the general logic of the game. Alñl of them are located under the 'chapter' directory.
+For the JSCUMM engine to work properly, there are some configuration files that must me set up and that defines the general logic of the game. All of them are located under the 'chapter' directory.
 
 ## File: /chapter/config.json
 Here is al example of this file:
@@ -23,7 +23,7 @@ Here is al example of this file:
 - total_number_flags: It is used to calculate the % of the game completed while saving a game.
 - text_images: If the first line of a ntxt command matches any of this entries, it will show the image configured. 
 
-:bulb: PRO-TIP: You can use the text_image field to configure different images, for example:
+:sunglasses: PRO-TIP: You can use the text_image field to configure different images, for example:
 ```
 ...
 "David:":"./chapter/characters/david.jpg",
@@ -45,7 +45,7 @@ As you can see, at the end of the 'David:' there are 0, 1 or 2 blank spaces. The
 ...
 ```
 
-:bulb: PRO-TIP: You can use the text_image field to highlight a finding or something important in the scene while looking at it. For example, this sentence will make that when talking about the scratches an image of the detail will be shown:
+:sunglasses: PRO-TIP: You can use the text_image field to highlight a finding or something important in the scene while looking at it. For example, this sentence will make that when talking about the scratches an image of the detail will be shown:
 ```
 ...
 "About scratches:": "./chapter/characters/marcas_despensa.jpg"
@@ -104,7 +104,7 @@ There are some interesting things in this file:
 - dative: There are actions that just require an object ("Take cookie"). But there are others that need something else: an indirect complement ("give cookie to Luna"). In this case, the attribute "dative" will be set as "true". The action will be defined in the second object (pe. "Luna"), and for each possible object, a list of actions will be defined.
 - preposition: If the action is dative, there must be a preposition. In the case of "give" the preposition is "to", but in the case of "mix something WITH something-else" the preposition will be "with". 
 
-:bulb: PRO-TIP: Both the characters and the items can have actions not defined in this file. It is used to defined internal functions only accessible by the goto command.
+:sunglasses: PRO-TIP: Both the characters and the items can have actions not defined in this file. It is used to defined internal functions only accessible by the goto command.
 
 ## File: /chapter/items.json
 Here is a fragment of an example of this file:
@@ -142,7 +142,7 @@ Basically, it is a list of items. Each item is defined by:
 - image: The image that will be seen in the inventory area of the GUI for this item.
 - actions: A dictionary, being the key the id of the action and the value a list of commands to execute.
 
-:bulb: PRO-TIP: There can be hidden items that the player will never obtain, but you can use to define global functions. This functions can be called from any scene and will be available via the goto command. 
+:sunglasses: PRO-TIP: There can be hidden items that the player will never obtain, but you can use to define global functions. This functions can be called from any scene and will be available via the goto command. 
 
 ## Files: /chapter/scenes/scene_name.json
 Here is an example of a scene file: 
@@ -236,7 +236,7 @@ Each character of the scene will have the following fields:
 - To check if a player has an object, the syntax will be: #item('item_id')
 - To check if a player has a flag, the syntax will be: #flag('flag_id')
 
-:bulb: PRO-TIP: An easy way to remove an object from an scene after the player takes it, is defining a condition with #item('item_id'), as can be seen in the example file with the 'hammer'
+:sunglasses: PRO-TIP: An easy way to remove an object from an scene after the player takes it, is defining a condition with #item('item_id'), as can be seen in the example file with the 'hammer'
 
 ## Directory: /chapter/scenes
 In this directory there will be all the scene_name.json of the game.
@@ -256,10 +256,10 @@ The format of this files is explained in another document.
 In this directory there will be all the images of the items of the game. 
 
 ## Directory: /chapter/music
-In this directory there will be all all the files for the sounstrack of the scenes.
+In this directory there will be all all the files for the soundtrack of the scenes.
 
 ## Directory: /chapter/sounds
 In this directory there will be all the possible sounds played, both from the GUI itself or by the script of the scenes or items. 
 
 ## Directory: /chapter/splash
-In this directory there will be all splash screens of tehe game.
+In this directory there will be all splash screens of the game.
