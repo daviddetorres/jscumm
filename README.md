@@ -46,7 +46,7 @@ The JSCUMM engine has been published as an open source project so you can make y
 
 It is intended to be used as it is, if you do not have experience programming, and is fully customizable if you are not afraid of some SVG.
 
-You can find different tutorials and reference guides in the documentation page. 
+You can find different tutorials and reference guides in the [documentation page](./docs/Documentation.md). 
 
 Also, in the 'chapter' directory you can find some scenes ready to be used with many examples of how to script most (if not all) of the commands and case of use of the JSCUMM scripting language. Also this scenes can be useful as templates or guides about how to create your own scenes and program the behaviour of the characters and objects.
 
