@@ -213,7 +213,7 @@ Here is an example of a scene file:
         {...}]
 }
 ```
-This is most probably the most complex configuration file, because it has most of the logic of the game. Let's dive in it:
+This is most probably the most complex configuration file, because it has most of the logic of the game. Let's dive into it:
 - name: This will be the name used in the GUI to show the name of the current scene, inside the scene name area. Also will be used while saving and loading a game in a memory slot
 - id: The id of the scene. Will be the same as the file name.
 - image: The file that will be loaded and shown automatically when entering the scene.
@@ -237,6 +237,8 @@ Each character of the scene will have the following fields:
 - To check if a player has a flag, the syntax will be: #flag('flag_id')
 
 :sunglasses: PRO-TIP: An easy way to remove an object from an scene after the player takes it, is defining a condition with #item('item_id'), as can be seen in the example file with the 'hammer'
+
+:sunglasses: PRO-TIP: The same way as with the items, you can define non-standard actions in the characters. This code will only be accessible via the goto command. This is a way to save time and code. The difference between defining the function in a scene or in the items file is that defining it in the scene will only be accessible when the player is in this scene. This can be used if you want to execute an action only if the player is in a scene (for example, mixing some ancient tokens in front of a magical shrine).
 
 ## Directory: /chapter/scenes
 In this directory there will be all the scene_name.json of the game.
