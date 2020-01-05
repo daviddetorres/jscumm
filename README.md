@@ -12,11 +12,11 @@ This engine was created as a scripting and GUI framework for the mobile game [Ho
 - Games are totally HTML5. No server needed, so the game can be served from a web server or distributed as offline games or mobile application.
 - Can be used to create mobile applications from the game via tools like [Cordova](https://cordova.apache.org/). 
 - Fully customizable GUI. All you need is a SVG editor like [Inkscape](https://inkscape.org/)
-- Scripting language based in JSON. Easy to write, easy to debug.
+- [Scripting language](./docs/JSCUMM_scripting_language.md) based in JSON. Easy to write, easy to debug.
 - Classic point-and-click interface, like old-good-times graphic adventures.
 - No three headed monkeys were injured or mistreated during the programming of the engine.
-- Fully support of translated text and interface.
 - Auto-save of the current game and manual saving and loading (all in local storage so no remote servers needed).
+- Fully support of translated text and interface.
 - Incorporated tools for extracting texts for translations.
 - Easy to debug through the JavaScript console of the web browser.
 - Support for showing the picture of the character that is talking and also support for different faces depending on the state of the character (angry, sad, gentle...).
@@ -25,7 +25,7 @@ This engine was created as a scripting and GUI framework for the mobile game [Ho
 ## Getting started
 To play a demo of the engine, clone the repository in the root of your local web server:
 ```
-git clone 
+git clone https://github.com/daviddetorres/jscumm
 ```
 The tutorial scene will be available at http://localhost
 
