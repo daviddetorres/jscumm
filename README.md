@@ -38,9 +38,6 @@ or directly with the command line:
 docker run --name jscumm -v $(pwd):/usr/share/nginx/html:ro -p 80:80 -d nginx
 ```
 
-## Games using the JSCUMM Engine
-- [Holmes O'Bedlam](https://play.google.com/store/apps/details?id=com.watsonnotes.holmesobedlam)
-
 ## Creating your own games
 The JSCUMM engine has been published as an open source project so you can make your own games just focusing in the important part: having fun with the script and the artwork. 
 
@@ -49,6 +46,11 @@ It is intended to be used as it is, if you do not have experience programming, a
 You can find different tutorials and reference guides in the [documentation page](./docs/Documentation.md). 
 
 Also, in the 'chapter' directory you can find some scenes ready to be used with many examples of how to script most (if not all) of the commands and case of use of the JSCUMM scripting language. Also this scenes can be useful as templates or guides about how to create your own scenes and program the behaviour of the characters and objects.
+
+
+## Games using the JSCUMM Engine
+- [Holmes O'Bedlam](https://play.google.com/store/apps/details?id=com.watsonnotes.holmesobedlam)
+
 
 ## Contributing
 Please read the [CONTRIBUTING](https://github.com/daviddetorres/connection-status-exporter/blob/master/CONTRIBUTING.md) guidelines.

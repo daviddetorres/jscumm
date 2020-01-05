@@ -107,12 +107,11 @@ Format:
 	"action": "action_id",
 	"dative": "dative_object_id"
 }
-
+```
 There are some special fields in this command:
 - type: Can be either "character" if the destination is a character inside the current scene or "item" if it is an item in the global inventory. 
 - dative: This optional field allows to call dative actions. 
 
-```
 
 ## rand
 This command allows to execute a random list of commands among various of them.
