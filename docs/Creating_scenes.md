@@ -17,7 +17,7 @@ First of all, if you are not familiar with Inkscape, lets open the layers menu a
 
 This scene is organized in 3 layers:
 - One for the background image: The image itself of the scene.
-One for the mobile characters:In this case, here there are the characters or objects that can disappear from the scene, like the hammer.
+- One for the mobile characters:In this case, here there are the characters or objects that can disappear from the scene, like the hammer.
 - One for the fixed characters: All the rest of the areas that, when clicked, actions will be triggered. 
 
 As you can see, in teh image the layer of fixed characters show red squares and areas, but this is just for the tutorial. Normally, this layer will be with opacity:0%, so the areas are not seen for the player.
@@ -26,9 +26,15 @@ Now that we can see the clickable objects, let's continue in how to give them li
 
 To do so, we have to open the XML editor, select the object and make two things: 
 - Add a new field 'class' and give it the value 'character_button'. This will tell the GUI that this area has a character behaviour configured in the JSON file.
-- Add a new field 'character' and give it the value of the character_id. This will be the same ID used in the field ID of this character in the JSON scene configuration file. 
+- Add a new field 'character_id' and give it the value of the character_id. This will be the same ID used in the field ID of this character in the JSON scene configuration file. 
 
 ## Some tips and advises
+
+:pencil2: Pen and paper before keyboard. 
+
+Always write first the script of your game before drawing or coding anything. Use notebooks, post-its, white-boards, graphs... This is the stage to make changes. 
+
+Once you start to code and draw, changing the flow of the game, introducing a new character, a new dialog, a new item to take or to leave can mean hours of work to be remade.
 
 :sunglasses: The default actions are your friends. 
 
@@ -38,7 +44,7 @@ Unless you have an army of three headed monkeys ready to program all this code, 
 
 :sunglasses: Remember to use functions all you can to save code.
 
-Even if it is a JSON-based scripting language, it is a programming language after all, so behave yourself and write clean code.
+Even if it is a JSON-based scripting language, it is a programming language after all, so behave yourself and write clean code (the yourself-of-the-future will never thank you enough for this).
 
 With the command goto you can call other actions in the characters of the scene, or even in items. This actions can be the standard ones... or not! 
 
@@ -57,4 +63,8 @@ Also, if you need more detail in the logs you can change the log level changing 
 
 Have fun! 
 
-Making games can be long, tiring and even frustrating, so at least, have fun writing the scripts. You'll gain mental health and your players will notice it. 
+You are writing a videgame, not a XML-based API for a legacy ERP... in Cobol!. Even though, making games can be long, tiring and even frustrating, so at least, have fun writing the scripts. 
+
+Use jokes, irony, references to the games of the 90's (not only three headed monkeys, be more creative than me), break the 4th wall (if Dora the Explorer and Deadpool do it, why not you?)... 
+
+You'll gain mental health and your players will notice it. 
