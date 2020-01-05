@@ -178,6 +178,7 @@ Here is an example of a scene file:
 							  }
 						  ],
 						  [...]
+					  ]
 		}
 	],
 	"characters": [
@@ -197,7 +198,8 @@ Here is an example of a scene file:
                 "mix":{
                     "hammer_id":[
                         {...},...
-                    ]
+                    ],
+					...
                 }
 				...
 			}
@@ -229,7 +231,7 @@ Each character of the scene will have the following fields:
 - name: The text that will be shown in the GUI in the action text area.
 - image: This field if optional. It defines the image located in the directory /chapter/characters that will be shown in the GUI in the notebook area.
 - cond: This field is optional. It defines a condition that will be evaluated at the loading of the scene. If false, the character will be hidden from the SVG image of the scene and will not be shown in the GUI notebook area.
-- actions: If the action is not dative, a dictionary being the key the actions and the value a list of commands that will be executed. If the action is dative (pe. "give"), a dictionary with the ID of the possible objects as key (pe. "hammer_id") and as value, a list of commands. 
+- actions: If the action is not dative, a dictionary being the key the actions and the value a list of commands that will be executed. If the action is dative (pe. "mix" in the previous file), a dictionary with the ID of the possible objects as key (pe. "hammer_id") and as value, a list of commands. 
 
 :pencil2: NOTE: For the condition, the format is the following:
 - The boolean operators os JavaScript are valid (! && ||) as well as parenthesis to group operands.
